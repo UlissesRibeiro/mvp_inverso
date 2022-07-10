@@ -1,0 +1,20 @@
+#titulo{
+  margin-top: 100px;
+}
+h6{
+  text-align: center;
+}
+.card{
+  width: 500px;
+}
+
+/*card button{
+  background-color: darkblue;
+  color: white;
+  width: auto;
+  height: 50%;
+}*/
+
+#resultado{
+  margin-top: 100px;
+}

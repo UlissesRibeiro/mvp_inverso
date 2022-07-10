@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação</title>
+    <link rel="stylesheet" href="/style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div class="container justify-content-center d-flex">
+    <h3 id="titulo">MVP INVERSO</h3>
+   </div>
+   <div class="container justify-content-center d-flex">
+    <form action="" id="players" style="margin-top: 80px;">
+        <div id="jogadores" class="container justify-content-center d-flex">
+
+            <div class="card" style="">
+                <img src="/Hidan.png" class="card-img-top" alt="...">
+                <button class="btn btn-primary" onclick="player1()">Hidan</button>
+                <h6 id="p1">0</h6>
+              </div>
+
+              <div class="card" style="">
+                <img src="/Jockster.png" class="card-img-top" alt="...">
+                <button class="btn btn-primary"  onclick="player2()">Jockster</button>
+                <h6 id="p2"></h6>
+              </div>
+
+              <div class="card" style="">
+                <img src="/micaO.png" class="card-img-top" alt="...">
+                <button class="btn btn-primary"  onclick="player3()">micaO</button>
+                <h6 id="p3"></h6>
+              </div>
+
+              <div class="card" style="">
+                <img src="/Yampi.png" class="card-img-top" alt="...">
+                <button class="btn btn-primary"  onclick="player4()">Yampi</button>
+                <h6 id="p4"></h6>
+              </div>
+
+              <div class="card" style="">
+                <img src="/Yuki.png" class="card-img-top" alt="...">
+                <button class="btn btn-primary"  onclick="player5()">Yuki</button>
+                <h6 id="p5"></h6>
+              </div>
+        </div>
+    </form>
+   </div>
+
+   <div class="container justify-content-center" id="resultado" onload="resultado()">
+    <!--<ul>
+      <li id="p1"></li>
+      <li id="p2"></li>
+      <li id="p3"></li>
+      <li id="p4"></li>
+      <li id="p5"></li>
+    </ul>-->
+   </div>
+   <p id="total"></p>
+   <!--<div>
+    <ul>
+      <li id="p1"></li>
+      <li id="p2"></li>
+      <li id="p3"></li>
+      <li id="p4"></li>
+      <li id="p5"></li>
+    </ul>
+   </div>-->
+<button onclick="limpar()">Limpar</button>
+</body>
+<script src="/votos.js"></script>
+<script>function limpar(){sessionStorage.clear();}</script>
+</html>
